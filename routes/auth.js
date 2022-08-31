@@ -46,8 +46,8 @@ router.post(
           id: user.id,
         },
       };
-      const atuhToken = jwt.sign(data, JWT_SECRET);
-      res.json({ atuhToken });
+      const authToken = jwt.sign(data, JWT_SECRET);
+      res.json({ authToken });
       //   res.json({ user });
     } catch (error) {
       console.log(error.message);
