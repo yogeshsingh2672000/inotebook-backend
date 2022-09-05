@@ -3,8 +3,8 @@ const User = require("../models/User");
 const router = express.Router();
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
-var jwt = require("jsonwebtoken");
-var fetchuser = require("../middleware/fetchuser");
+const jwt = require("jsonwebtoken");
+const fetchuser = require("../middleware/fetchuser");
 require("dotenv").config();
 
 // const JWT_SECRET = "ThisIsUsedToSignTheJwtToken";

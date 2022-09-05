@@ -11,6 +11,9 @@ app.use(express.json());
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/notes", require("./routes/notes"));
 
+// xelpmoc task
+app.use("/misc", require("./routes/xelpmoc"));
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
